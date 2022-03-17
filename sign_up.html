@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <link rel="stylesheet" href="style_main.css"> <!--Referenz zu style.css-->
+    <style>
+        body{ /*Defaultcursor, Hintergrund- und Schriftfarbe*/
+            cursor: url('images/cursor.png'), auto;
+            background-color: #0a1010;
+            color: GhostWhite;
+        } 
+	/*Farben der Links auf dieser Seite*/
+        a:link {
+            color: LavenderBlush;
+            background-color: transparent;
+            text-decoration: none;
+        }                   
+        a:visited {
+            color: #ffccdd;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover, a:active {
+            color: #ffe6ee;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        form { /*Schriftart im Formular*/
+            font-family: Win95;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SIGN UP</title>
+    </head>
+    <body>
+        <header> <!--Siehe style.css-->
+            <h1>THE BOX</h1> <!--Siehe style.css-->
+        </header>
+        <h2 style= "text-align: center; font-family: Sysfont;">Sign Up</h2> <!--Untertitel, zentriert-->
+	    <br>
+	<!--PHP Formular für das Registrieren. Funktionieren tut es nicht-->
+        <form action="sign_up.php" method="post">
+        Name: <br>
+        <input type="text" name="vorname" size="20" maxlength="30" />
+        <br>
+        Surname: <br>
+        <input type="text" name="nachname" size="20" maxlength="30" /><br />
+        E-Mail: <br>
+        <input type="text" name="email" size="20" maxlength="30" />
+        <br>
+        Phone: <br>
+        <input type="text" name="telefon" size="20" maxlength="30" />
+        <br>
+        <input type="submit" value="Register" / style="font-family: Win95">
+        </form>
+        <footer> <!--Siehe style.css-->
+            <hr color=LavenderBlush> <!--Querstrich über dem Footer-->
+            <div style="margin-left: 6px"> <!--Links sollen 6px weg vom Rand sein-->
+                <a href="archive.html">Archive</a> <!--Zum Archiv-->
+                <a href="about_us.html">About Us</a> <!--Zu About Us-->
+            </div>
+        </footer>
+    </body>
+</html>

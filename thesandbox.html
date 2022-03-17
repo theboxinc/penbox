@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <link rel="stylesheet" href="style_main.css"> <!--Referenz zu style.css-->
+      <link rel="stylesheet" href="dropdown.css"> <!--Referenz zu dropdown.css-->
+      <style>
+            body{ /*Defaultcursor und Hintergrundbild*/
+                cursor: url('images/cursor.png'), auto;
+                background-image: url('images/background_main.jpg');
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <title>THE SANDBOX</title>
+    </head>
+    <body> 
+        <header> <!--Siehe style.css-->
+            <h1>THE SANDBOX</h1> <!--Siehe style.css-->
+            <div class="dropdown"> <!--Dropdown, siehe dropdown.css-->
+              <button class="dropbtn"><img src="images/headphones.png"></button>    
+              <div class="dropdown-content">
+                  <audio controls loop>
+                      <source src="sweden.mp3" type="audio/mpeg"> <!--Hintergrundmusik im Dropdownmenu-->
+                  </audio>
+              </div>
+            </div>
+        </header>
+        <h3 style= "text-align: center; font-family: Win95; color:#0a1010">Welcome to the sandbox. This will be your new home :) </h3> <!--Untertitel, zentriert-->
+        <p align="center"><iframe src="https://classic.minecraft.net/" style="width: 960px; height: 600px; border: 0"iframe></iframe></p> <!--IFrame mit Minecraft in https://classic.minecraft.net/, zentriert--> 
+    </body>
+</html>

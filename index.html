@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <link rel="stylesheet" href="style_main.css"> <!--Referenz zu style.css-->
+      <link rel="stylesheet" href="dropdown.css"> <!--Referenz zu dropdown.css-->
+      <style>
+            body{ /*Defaultcursor und Hintergrundbild*/
+                cursor: url('images/cursor.png'), auto;
+                background-image: url('images/background_main.jpg');
+            }
+            iframe{
+                cursor: url('images/cursor.png'), auto;
+            }
+            /*Farben der Links ausserhalb des Dropdownmenus*/
+            a.normal:link {
+                color: LavenderBlush;
+                background-color: transparent;
+                text-decoration: none;
+            }                   
+            a.normal:visited {
+                color: #ffccdd;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a.normal:hover, a.normal:active {
+                color: #ffe6ee;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            /*Farben der Links im Dropdownmenu*/
+            a.drop:link {
+                color: #ffccdd;
+                background-color: transparent;
+                text-decoration: none;
+            }                   
+            a.drop:visited {
+                color: #ffb3cc;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a.drop:hover, a.normal:active {
+                color: #ff99bb;
+                background-color: #ffe6ee;
+                text-decoration: none;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <title>THE PENBOX</title>
+    </head>
+
+    <body> 
+        <header> <!--Siehe style.css-->
+            <h1>THE PENBOX</h1> <!--Siehe style.css-->
+            <div class="dropdown"> <!--Dropdownmenu-->
+              <button class="dropbtn"><img src="images/lightbulb.png"></button>    
+              <div class="dropdown-content">
+                <a href="https://4qrcode.com/scan-qr-code.php" target="_blank" class="drop">Decode QR Codes</a> <!--Zu einem QR Code Scanner, in einem neuen Tab-->
+                <a href="https://morsecode.world/international/translator.html" target="_blank" class="drop">Morse Code</a> <!--Zu einem Morsecodeübersetzer, in einem neuen Tab-->
+                <a href="https://www.rapidtables.com/convert/number/binary-to-ascii.html" target="_blank" class="drop">Binary Translator</a> <!--Zu einem Binarcodeübersetzer, in einem neuen Tab-->
+              </div>
+            </div>
+        </header>   
+        <p align="center"><iframe src="unity.html" style="width: 960px; height: 600px; border: 0"iframe></iframe></p> <!--Iframe mit Unityprojekt in unity.html, zentriert-->     
+        <footer> <!--Siehe style.css-->
+            <hr color=LavenderBlush> <!--Querstrich über dem Footer-->
+            <div style="margin-left: 6px"> <!--Links sollen 6px weg vom Rand sein-->
+                <a href="archive.html" class="normal">Archive</a> <!--Zum Archiv-->
+                <a href="about_us.html" class="normal">About us</a> <!--Zu About Us-->
+                <a href="sign_up.html" class="normal">Sign Up</a> <!--Zu einer Registrierungsseite-->
+            </div>
+        </footer>
+    </body>
+</html>
